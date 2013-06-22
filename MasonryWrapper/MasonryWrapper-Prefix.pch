@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MasonryWrapper' target in the 'MasonryWrapper' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
