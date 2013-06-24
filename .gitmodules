@@ -1,0 +1,3 @@
+[submodule "MasonryWrapper/Masonry"]
+	path = MasonryWrapper/Masonry
+	url = git@github.com:Tanchey/MasonryCPP11.git

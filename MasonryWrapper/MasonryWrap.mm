@@ -4,7 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
+extern "C" {
 #import "MasonryWrap.h"
+}
 #include "MasonryCore.h"
 #include <vector>
 #include "DiscreteRect.h"
@@ -17,7 +19,7 @@ NSArray *vectorDiscreteRectsToNSArray(std::vector<DiscreteRect> rects)
         CGRect r = CGRectMake(
             dr.x, dr.y, dr.width, dr.height
         );
-        return [NSValue valueWithRect:r];
+        return [NSValue valueWithCGRect:r];
     };
     
     for(auto r: rects) {
@@ -32,7 +34,7 @@ std::vector<DiscreteRect>nsarrayToDiscreteRectsVector(NSArray *rects)
     std::vector<DiscreteRect> results = std::vector<DiscreteRect>();
 
     DiscreteRect (^convert)(NSValue *) = ^(NSValue *rectValue) {
-        CGRect rect = [rectValue rectValue];
+        CGRect rect = [rectValue CGRectValue];
         return DiscreteRect(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
     };
 

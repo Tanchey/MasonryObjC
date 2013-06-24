@@ -13,6 +13,14 @@
 		09B9214A177599F30026086A /* DiscreteRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92145177599F30026086A /* DiscreteRect.cpp */; };
 		09B9214C177599F30026086A /* MasonryCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92148177599F30026086A /* MasonryCore.cpp */; };
 		09B921571775A6640026086A /* MasonryWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B921551775A6630026086A /* MasonryWrap.mm */; };
+		09B921E5177813940026086A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B921E4177813940026086A /* SenTestingKit.framework */; };
+		09B921E7177813940026086A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B921E6177813940026086A /* UIKit.framework */; };
+		09B921E8177813940026086A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B92136177599CC0026086A /* Foundation.framework */; };
+		09B921EE177813940026086A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09B921EC177813940026086A /* InfoPlist.strings */; };
+		09B921F1177813940026086A /* MasonryWrapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B921F0177813940026086A /* MasonryWrapperTest.m */; };
+		09B921F7177817890026086A /* MasonryWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B921551775A6630026086A /* MasonryWrap.mm */; };
+		09B921F8177818E90026086A /* DiscreteRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92145177599F30026086A /* DiscreteRect.cpp */; };
+		09B921F9177818ED0026086A /* MasonryCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92148177599F30026086A /* MasonryCore.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +48,14 @@
 		09B92149177599F30026086A /* MasonryCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryCore.h; sourceTree = "<group>"; };
 		09B921551775A6630026086A /* MasonryWrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MasonryWrap.mm; sourceTree = "<group>"; };
 		09B921561775A6630026086A /* MasonryWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryWrap.h; sourceTree = "<group>"; };
+		09B921E3177813940026086A /* MasonryWrapperTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasonryWrapperTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B921E4177813940026086A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		09B921E6177813940026086A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		09B921EB177813940026086A /* MasonryWrapperTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasonryWrapperTest-Info.plist"; sourceTree = "<group>"; };
+		09B921ED177813940026086A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09B921EF177813940026086A /* MasonryWrapperTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasonryWrapperTest.h; sourceTree = "<group>"; };
+		09B921F0177813940026086A /* MasonryWrapperTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasonryWrapperTest.m; sourceTree = "<group>"; };
+		09B921F2177813940026086A /* MasonryWrapperTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryWrapperTest-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09B921DF177813940026086A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B921E5177813940026086A /* SenTestingKit.framework in Frameworks */,
+				09B921E7177813940026086A /* UIKit.framework in Frameworks */,
+				09B921E8177813940026086A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -58,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				09B92138177599CC0026086A /* MasonryWrapper */,
+				09B921E9177813940026086A /* MasonryWrapperTest */,
 				09B92135177599CC0026086A /* Frameworks */,
 				09B92133177599CC0026086A /* Products */,
 			);
@@ -67,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				09B92132177599CC0026086A /* MasonryWrapper */,
+				09B921E3177813940026086A /* MasonryWrapperTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				09B92136177599CC0026086A /* Foundation.framework */,
+				09B921E4177813940026086A /* SenTestingKit.framework */,
+				09B921E6177813940026086A /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +141,26 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		09B921E9177813940026086A /* MasonryWrapperTest */ = {
+			isa = PBXGroup;
+			children = (
+				09B921EF177813940026086A /* MasonryWrapperTest.h */,
+				09B921F0177813940026086A /* MasonryWrapperTest.m */,
+				09B921EA177813940026086A /* Supporting Files */,
+			);
+			path = MasonryWrapperTest;
+			sourceTree = "<group>";
+		};
+		09B921EA177813940026086A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B921EB177813940026086A /* MasonryWrapperTest-Info.plist */,
+				09B921EC177813940026086A /* InfoPlist.strings */,
+				09B921F2177813940026086A /* MasonryWrapperTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +180,24 @@
 			productName = MasonryWrapper;
 			productReference = 09B92132177599CC0026086A /* MasonryWrapper */;
 			productType = "com.apple.product-type.tool";
+		};
+		09B921E2177813940026086A /* MasonryWrapperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B921F3177813940026086A /* Build configuration list for PBXNativeTarget "MasonryWrapperTest" */;
+			buildPhases = (
+				09B921DE177813940026086A /* Sources */,
+				09B921DF177813940026086A /* Frameworks */,
+				09B921E0177813940026086A /* Resources */,
+				09B921E1177813940026086A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasonryWrapperTest;
+			productName = MasonryWrapperTest;
+			productReference = 09B921E3177813940026086A /* MasonryWrapperTest.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,9 +221,37 @@
 			projectRoot = "";
 			targets = (
 				09B92131177599CC0026086A /* MasonryWrapper */,
+				09B921E2177813940026086A /* MasonryWrapperTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09B921E0177813940026086A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B921EE177813940026086A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B921E1177813940026086A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09B9212E177599CC0026086A /* Sources */ = {
@@ -169,7 +265,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09B921DE177813940026086A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B921F1177813940026086A /* MasonryWrapperTest.m in Sources */,
+				09B921F7177817890026086A /* MasonryWrap.mm in Sources */,
+				09B921F8177818E90026086A /* DiscreteRect.cpp in Sources */,
+				09B921F9177818ED0026086A /* MasonryCore.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09B921EC177813940026086A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B921ED177813940026086A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		09B9213F177599CC0026086A /* Debug */ = {
@@ -243,6 +361,41 @@
 			};
 			name = Release;
 		};
+		09B921F4177813940026086A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryWrapperTest/MasonryWrapperTest-Prefix.pch";
+				INFOPLIST_FILE = "MasonryWrapperTest/MasonryWrapperTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		09B921F5177813940026086A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasonryWrapperTest/MasonryWrapperTest-Prefix.pch";
+				INFOPLIST_FILE = "MasonryWrapperTest/MasonryWrapperTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -260,6 +413,15 @@
 			buildConfigurations = (
 				09B92142177599CC0026086A /* Debug */,
 				09B92143177599CC0026086A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B921F3177813940026086A /* Build configuration list for PBXNativeTarget "MasonryWrapperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B921F4177813940026086A /* Debug */,
+				09B921F5177813940026086A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
