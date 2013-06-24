@@ -10,6 +10,9 @@
 		09B92137177599CC0026086A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B92136177599CC0026086A /* Foundation.framework */; };
 		09B9213A177599CC0026086A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B92139177599CC0026086A /* main.m */; };
 		09B9213E177599CC0026086A /* MasonryWrapper.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09B9213D177599CC0026086A /* MasonryWrapper.1 */; };
+		09B9214A177599F30026086A /* DiscreteRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92145177599F30026086A /* DiscreteRect.cpp */; };
+		09B9214C177599F30026086A /* MasonryCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09B92148177599F30026086A /* MasonryCore.cpp */; };
+		09B921571775A6640026086A /* MasonryWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B921551775A6630026086A /* MasonryWrap.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		09B92139177599CC0026086A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09B9213C177599CC0026086A /* MasonryWrapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasonryWrapper-Prefix.pch"; sourceTree = "<group>"; };
 		09B9213D177599CC0026086A /* MasonryWrapper.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MasonryWrapper.1; sourceTree = "<group>"; };
+		09B92145177599F30026086A /* DiscreteRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiscreteRect.cpp; sourceTree = "<group>"; };
+		09B92146177599F30026086A /* DiscreteRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscreteRect.h; sourceTree = "<group>"; };
+		09B92148177599F30026086A /* MasonryCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MasonryCore.cpp; sourceTree = "<group>"; };
+		09B92149177599F30026086A /* MasonryCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryCore.h; sourceTree = "<group>"; };
+		09B921551775A6630026086A /* MasonryWrap.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MasonryWrap.mm; sourceTree = "<group>"; };
+		09B921561775A6630026086A /* MasonryWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryWrap.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +82,12 @@
 		09B92138177599CC0026086A /* MasonryWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				09B92144177599F30026086A /* Masonry */,
 				09B92139177599CC0026086A /* main.m */,
 				09B9213D177599CC0026086A /* MasonryWrapper.1 */,
 				09B9213B177599CC0026086A /* Supporting Files */,
+				09B921551775A6630026086A /* MasonryWrap.mm */,
+				09B921561775A6630026086A /* MasonryWrap.h */,
 			);
 			path = MasonryWrapper;
 			sourceTree = "<group>";
@@ -86,6 +98,17 @@
 				09B9213C177599CC0026086A /* MasonryWrapper-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09B92144177599F30026086A /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				09B92145177599F30026086A /* DiscreteRect.cpp */,
+				09B92146177599F30026086A /* DiscreteRect.h */,
+				09B92148177599F30026086A /* MasonryCore.cpp */,
+				09B92149177599F30026086A /* MasonryCore.h */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B9213A177599CC0026086A /* main.m in Sources */,
+				09B9214A177599F30026086A /* DiscreteRect.cpp in Sources */,
+				09B9214C177599F30026086A /* MasonryCore.cpp in Sources */,
+				09B921571775A6640026086A /* MasonryWrap.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
